@@ -7,6 +7,8 @@
 #include_recipe 'apt'
 #include_recipe 'ntp'
 
-file "/tmp/locall.txt" do
-	content "Chef recipe created by chef client local mode"	
+template '/tmp/greeting.txt' do
+
+	variables greeting: 'Hello'
+
 end
