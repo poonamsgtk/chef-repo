@@ -1,0 +1,17 @@
+
+Chef Issues:  
+
+Bringing machine 'default' up with 'virtualbox' provider...
+The following berks command failed to execute:
+
+    /opt/chefdk/embedded/bin/berks --version --format json
+
+The stdout and stderr are shown below:
+
+    stdout:
+    stderr: Ignoring ffi-1.9.18 because its extensions are not built.  Try: gem pristine ffi --version 1.9.18
+Ignoring unf_ext-0.0.7.4 because its extensions are not built.  Try: gem pristine unf_ext --version 0.0.7.4
+Ignoring wdm-0.1.1 because its extensions are not built.  Try: gem pristine wdm --version 0.1.1
+/opt/chefdk/embedded/lib/ruby/site_ruby/2.3.0/rubygems.rb:270:in `find_spec_for_exe': can't find gem berkshelf (>= 0.a) (Gem::GemNotFoundException)
+	from /opt/chefdk/embedded/lib/ruby/site_ruby/2.3.0/rubygems.rb:298:in `activate_bin_path'
+	from /opt/chefdk/embedded/bin/berks:22:in `<main>'
